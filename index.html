@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/RecipeLogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Express Eat</title>
+</head>
+<body>
+
+    <!--- Navigation Bar -->
+    <div class="header">
+        <nav class="nav-bar">
+            <img src="./img/Logo.png" class="brand-name">
+            <a href="#" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Search Bar -->
+        <div class="search-wrapper">
+            <div class="fa fa-search"></div>
+            <input type="text" name=""  id="search" placeholder="What do you want to eat?" onkeyup="search()">
+            <div class="fa fa-times"  ></div>
+        </div>
+    </div>
+
+    <!-- Search Results -->
+        <div class="result">
+            <h1>Your Search Result: </h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="card-grid" >
+            <div class="food-list" id="food-list">
+                    <p id="none" style="display: none;">Sorry, the food you were looking for was not available.</p>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="img/id.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Idli vada</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/VGc4dFiWcQw?si=g0wHst3-03Lg-Krk" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/dosa.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Dosa</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/xtiINOSIYQM?si=Pj1K-r_mmB5Bok_A" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/Puliyodharai.jpg">
+                        </div>
+                        <div class="card-body" >
+                            <h3>Puliyodharai</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/sqVPrJf148M?si=jZR0iai2JTj6g-kS" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/poori.jpg">
+                        </div>
+                        <div class="card-body" >
+                            <h3>Poori</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/DWSq8Ok6clY?si=uZDkNO11d85Vw2G2" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/Poha.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Poha</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/D_PZdH0ixTw?si=8g1AIDa8HCMWf825" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/upmashira.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Upmashira</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/wrcCYSQFNOk?si=VufHEx3YBwX7CioI" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/kajukari.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Kaju Kari</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/LiRpDMBImPU?si=epEhZVRXkqaaeJ3R" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/piza.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>pizza</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/WC3VJyWYlF4?si=MhO_bVlWkoVNov6g" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/mango.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Mango shake</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/02w99yRvqtY?si=pSYptSRE8M0F8cSh" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/pani.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Pani Puri</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/qDS12I81fSk?si=P8D5HaNoo7q4cdWE" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/golab.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Gulab Jamun</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/K-uiZ9FcGK4?si=5_PbHgLXFwTmF_XX" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/Rasgulla.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Rasgulla</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/8mlXI6pQ2WM?si=r09cYbWeMgMn5Aka" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/jalebi.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Jalebi</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/uyHnrDuIOII?si=QH5V7bk_eZExQW6o" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/la.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Lassi</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/5lsTwNAcqZc?si=DjHpr2YU3z79t0aV" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+                    <div class="card card-shadow">
+                        <div class="card-header card-image">
+                            <img src="./img/Pakoda.jpg">
+                        </div>
+                        <div class="card-body" >
+                        <h3>Pakoda</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://youtube.com/shorts/77hxqUOIW9E?si=_qAmzHVpICPK4QLL" class="btn">Get Recipe</a>
+                        </div>
+                    </div>
+            </div> 
+
+           
+                
+                    </div>
+                    <div class = "meal-img">
+                        
+                      </div>
+                      <div class = "meal-link">
+                        
+                    </div>
+                </div>
+            </div> 
+            
+            
+        </div>
+            <!--Ending of Recipe Details-->
+
+            <!--Footer-->
+    <div class="footer">
+        <div class="social-btn">
+            <a href="https://www.facebook.com/share/p/jEU5a4mnRYjzHvhp/?mibextid=oFDknk" target="_blank" ><i class="	fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/p/C3K9bqOvwvU/?igsh=NWFhMGQybHl2cjBq" target="_blank" ><i class="	fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/satvikpatil/" target="_blank"><i class="	fab fa-linkedin"></i></a>
+            <a href="https://github.com/Satvikpatil7" target="_blank" "><i class="	fab fa-github"></i></a>
+        </div>
+            <div class="quick-bar">
+                <a href="index.html">Home</a>
+                
+            </div>
+        <p>Satvik M Patil</p>  
+    </div>
+
+    <!--Ending of Footer-->
+
+<!--Script for Javascript-->
+
+</body>
+</html>
